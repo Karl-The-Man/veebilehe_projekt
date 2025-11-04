@@ -1,0 +1,10 @@
+.appi {
+    display: flex;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 8px;
+}
+
+.center {
+    text-align: center;
+}
