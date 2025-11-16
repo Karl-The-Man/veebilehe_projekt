@@ -2,18 +2,29 @@ body{
     background-color: #EEE5E9;
     margin: 0;
     padding: 0;
+    font-family: "Comic Sans", "Comic Sans MS" ;
 }
+
 
 
 
 .Pealkiri{
     color: white;
-    font-family: "Comic Sans", "Comic Sans MS" ;
+}
+
+.Pealkiri1{
+    color: #F1BF98;
+}
+
+.sektsioon{
+    border-top-style: solid;
+    border-color: #CC2936;
 }
 
 .header{
     background-color: #08415C;
-    padding: 5%;
+    padding: 2%;
+    
     
 }
 
@@ -39,6 +50,15 @@ body{
     order: -1;
     flex: 40%;
     font-family: "Comic Sans MS";
+    border-left-style: solid;
+    border-color: #CC2936;
+    border-width: auto;
+}
+
+.koostisosad{
+    flex: 40%;
+    
+    order: -2;
 }
 
 .Pilt{
@@ -50,4 +70,10 @@ body{
 .pasta{
     border-radius: 0px 10px 10px 0;
     display: block;
+}
+
+.jalus{
+    background-color: #6B818C;
+    padding: 10px;
+    color: white;
 }
