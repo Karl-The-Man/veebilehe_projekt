@@ -1,10 +1,18 @@
 .appi {
-    display: flex;
     align-items: center;
-    background-color: aquamarine;
+    background-color: #08415C;
     padding: 8px;
+    color: #EEE5E9;
 }
 
-.center {
+body {
+    margin: 0;
+    font-family: "Comic Sans MS";
+}
+
+.alapeakiri {
+    border-top-style: solid;
+    border-color: #CC2936;
     text-align: center;
+    color: #F1BF98;
 }
