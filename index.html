@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pommi(poiste) lemmikretseptid</title>
+  <link rel="stylesheet" href="karl.css">
+</head>
+<body>
+  <header>
+    <h1>Pommi(poiste) lemmikretseptid</h1>
+    <p class="subtitle">Kolme sõbra loodud maitsev veebiprojekt</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Tere tulemast!</h2>
+      <p>
+        See veebileht on loodud Karl Elmar Vikati, Mattias Reimandi ja Albert Lapsaniti koostöös.
+        Siit leiad meie lemmiktoidud, samm-sammulised juhised ning killukese meie isiklikust stiilist.
+      </p>
+      <img src="pildid/pommikad.png" alt="Pommipoisid">
+      <button id="startButton">Avasta retsepte</button>
+    </section>
+
+    <section class="gallery">
+      <h2>Meie lemmikud</h2>
+      <div class="image-grid">
+        <div class="recipe-card" onclick="openRecipe('mattias.html')">
+          <img src="/pildid/šokolaadikook.jpg" alt="Šokolaadikook">
+          <h3>Šokolaadikook</h3>
+          <p>Mattias valik</p>
+        </div>
+
+        <div class="recipe-card" onclick="openRecipe('albert.html')">
+          <img src="pildid/kanapasta.webp" alt="Koorene kana pasta">
+          <h3>Koorene kana pasta</h3>
+          <p>Alberti valik</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Pommi(poisid) | Õpiprojekt</p>
+  </footer>
+
+  <script src="karl.js"></script>
+</body>
+</html>
