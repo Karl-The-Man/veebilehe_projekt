@@ -1,0 +1,79 @@
+body{
+    background-color: #EEE5E9;
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans", "Comic Sans MS" ;
+}
+
+
+
+
+.Pealkiri{
+    color: white;
+}
+
+.Pealkiri1{
+    color: #F1BF98;
+}
+
+.sektsioon{
+    border-top-style: solid;
+    border-color: #CC2936;
+}
+
+.header{
+    background-color: #08415C;
+    padding: 2%;
+    
+    
+}
+
+.sissejuhatus{
+    font-family: "Comic Sans MS";
+}
+
+.Container{
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    margin: 5%;
+    border-left-style: solid;
+    border-width: 10px;
+    border-color: #CC2936;
+    border-radius: 10px 10px 10px 10px;
+    align-items: stretch;
+    
+}
+
+.tekst{
+    background-color: white;
+    order: -1;
+    flex: 40%;
+    font-family: "Comic Sans MS";
+    border-left-style: solid;
+    border-color: #CC2936;
+    border-width: auto;
+}
+
+.koostisosad{
+    flex: 40%;
+    
+    order: -2;
+}
+
+.Pilt{
+    align-self: flex-end;
+    border-radius: 0px 10px 10px 0;
+    height: auto;
+}
+
+.pasta{
+    border-radius: 0px 10px 10px 0;
+    display: block;
+}
+
+.jalus{
+    background-color: #6B818C;
+    padding: 10px;
+    color: white;
+}
