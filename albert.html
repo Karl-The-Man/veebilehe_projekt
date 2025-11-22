@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head class="pea">
+<script src="albert.js" defer></script>
 <link rel="stylesheet" href="albert.css">
 <title>Minu retsept</title>
 </head>
@@ -25,17 +26,20 @@
 </div>
 <div class="Container">
     <div class="koostisosad">
+        <center><button id="nupp">Vabaduse ühikud</button></center>
         <p> <input type="checkbox" name="makaronid"> 
-            <label for="makaronid">Lemmik maitsega makaroni kuju ~250g <br></label>
+            <label for="makaronid" id="makaronid_ühik">Lemmik maitsega makaroni kuju ~250g <br></label>
             <br>
             <input type="checkbox" name="koor" id="">
-            <label for="koor">Koor (toidu/köögi/vahu olenevald kui rammusa pasta tuju on) 1 potsik <br></label>
+            <label for="koor" id="koor_ühik">Koor (toidu/köögi/vahu olenevald kui rammusa pasta tuju on) 1 potsik <br></label>
             <br>
             <input type="checkbox" name="juust" id="">
-            <label for="juust">Sinihallitusjuust (oma maitse järgi hallitunud, ilmselt hea ka teist värvi hallitusega) <br></label>
+            <label for="juust" id="juust_ühik">Sinihallitusjuust (oma maitse järgi hallitunud, ilmselt hea ka teist värvi hallitusega) <br></label>
             <br>
             <input type="checkbox" name="mandlilaastud" id="">
-            <label for="mandlilaastud">Mandlilaastud</label>
+            <label for="mandlilaastud" id="mandlid_ühik">Mandlilaastud</label>
+            <br>
+            <p id="js_sisend"></p>
          </p>
 
     </div>
