@@ -8,7 +8,7 @@ function teisenda() {
     document.getElementById('makaronid_ühik').innerHTML = "0.55 lbs of pasta";
     document.getElementById("koor_ühik").innerHTML = "0.105 gallons of heavy cream";
     document.getElementById("juust_ühik").innerHTML = "0.22 lbs of blue cheese";
-    document.getElementById("mandlid_ühik").innerHTML = "Roasted almond slices";
+    document.getElementById("mandlid_ühik").innerHTML = "Roasted almond slices" ;
     x = 1;
     }
     else if (x == 1) {

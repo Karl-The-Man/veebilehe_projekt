@@ -77,3 +77,12 @@ body{
     padding: 10px;
     color: white;
 }
+
+.nupp{
+    background-color: #EEE5E9 ;
+    border-radius: 10px;
+    padding: 2px;
+    border-color: #EEE5E9;
+    font-family: 'Comic Sans MS';
+    font: bold;
+}
