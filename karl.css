@@ -38,6 +38,7 @@ header {
 
 /* INTRO */
 .intro {
+  position: relative;
   max-width: 700px;
   margin: 3rem auto;
   padding: 2rem;
@@ -66,6 +67,161 @@ button {
 button:hover {
   background-color: var(--indigo);
   transform: scale(1.05);
+}
+
+/* Nuclear explosion effect */
+.explosion-flash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle at var(--flash-x, 50%) var(--flash-y, 50%), rgba(255,255,255,0.95) 0%, rgba(255,200,0,0.8) 20%, rgba(255,100,0,0.6) 40%, rgba(255,50,0,0.3) 60%, transparent 100%);
+  pointer-events: none;
+  z-index: 9999;
+  opacity: 0;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.explosion-flash {
+  animation: flash 0.6s ease-out forwards;
+}
+
+.explosion-core {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10000;
+  background: radial-gradient(circle, #ffffff 0%, #ffd700 20%, #ff6600 40%, #cc0000 70%, transparent 100%);
+  box-shadow: 0 0 100px #ff6600, 0 0 200px #ffd700, 0 0 300px #ffffff;
+}
+
+@keyframes core-explode {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0);
+  }
+  10% {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.explosion-core {
+  animation: core-explode 1s ease-out forwards;
+}
+
+.explosion-shockwave {
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  pointer-events: none;
+  z-index: 9998;
+  box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes shockwave {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    width: 800px;
+    height: 800px;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    border-width: 1px;
+  }
+}
+
+.explosion-shockwave {
+  animation: shockwave 1.2s ease-out forwards;
+}
+
+.explosion-particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10001;
+  box-shadow: 0 0 10px currentColor;
+}
+
+@keyframes particle-fast {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes particle-slow {
+  0% {
+    transform: translate(0, 0) scale(1.5);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0);
+    opacity: 0;
+  }
+}
+
+.explosion-particle.fast {
+  animation: particle-fast 0.8s ease-out forwards;
+}
+
+.explosion-particle.slow {
+  animation: particle-slow 1.5s ease-out forwards;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translate(0, 0); }
+  10%, 30%, 50%, 70%, 90% { transform: translate(-5px, -5px); }
+  20%, 40%, 60%, 80% { transform: translate(5px, 5px); }
+}
+
+body.exploding {
+  animation: shake 0.5s ease-in-out;
 }
 
 /* GALLERY */
