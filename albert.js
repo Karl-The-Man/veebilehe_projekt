@@ -1,5 +1,6 @@
 const nupp = document.getElementById("nupp");
 nupp.addEventListener("click", teisenda);
+const kotkas = new Audio('kotkas.mp3');
 
 let x = 0
 
@@ -9,6 +10,7 @@ function teisenda() {
     document.getElementById("koor_ühik").innerHTML = "0.105 gallons of heavy cream";
     document.getElementById("juust_ühik").innerHTML = "0.22 lbs of blue cheese";
     document.getElementById("mandlid_ühik").innerHTML = "Roasted almond slices" ;
+    kotkas.play();
     x = 1;
     }
     else if (x == 1) {

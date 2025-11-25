@@ -24,12 +24,15 @@ body{
 .header{
     background-color: #08415C;
     padding: 2%;
+    text-align: center;
     
     
 }
 
 .sissejuhatus{
     font-family: "Comic Sans MS";
+    font-style: italic;
+    text-align: center;
 }
 
 .Container{
@@ -53,6 +56,11 @@ body{
     border-left-style: solid;
     border-color: #CC2936;
     border-width: auto;
+    text-align: justify;
+}
+
+.naudi{
+    text-align: center;
 }
 
 .koostisosad{
@@ -76,6 +84,7 @@ body{
     background-color: #6B818C;
     padding: 10px;
     color: white;
+    text-align: center;
 }
 
 .nupp{
@@ -85,4 +94,8 @@ body{
     border-color: #EEE5E9;
     font-family: 'Comic Sans MS';
     font: bold;
+}
+
+.NUPP{
+    text-align: center;
 }
