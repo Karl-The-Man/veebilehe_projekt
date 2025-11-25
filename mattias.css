@@ -9,9 +9,11 @@ body {
     margin: 0;
     font-family: "Comic Sans MS";
     background-color: #EEE5E9;
+    min-height: 100vh;
 }
 
 .alapeakiri {
+    min-height: 50px;
     border-top-style: solid;
     border-color: #CC2936;
     text-align: center;
@@ -22,10 +24,52 @@ body {
     text-align: center;
 }
 
-footer {
+.kastid {
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    margin: 5%;
+    border-left-style: solid;
+    border-width: 10px;
+    border-color: #CC2936;
+    border-radius: 10px 10px 10px 10px;
+    align-items: stretch;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.koostisosad {
+    flex: 25%;
+    padding: 0.2rem;
+}
+
+.juhend {
+    flex: 40%;
+    border-left-style: solid;
+    border-color: #CC2936;
+    border-width: auto;
+    text-align: center;
+    line-height: 18pt;
+}
+
+.pilt {
+    align-self: flex-end;
+    height: auto;
+}
+
+.pannkook {
+    border-radius: 0px 10px 10px 0;
+    display: block;
+}
+
+.jalga {
+    min-height: 50px;
     background-color: #6B818C;
     color: white;
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
