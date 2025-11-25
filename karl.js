@@ -1,3 +1,8 @@
+const plahvatus = new Audio('plahvatus.mp3');
+plahvatus.preload = 'auto'; // Preload the audio file
+plahvatus.load(); // Force loading to start immediately
+
+
 document.getElementById("startButton").addEventListener("click", (e) => {
   createNuclearExplosion(e.target);
   setTimeout(() => {
@@ -17,6 +22,9 @@ function createNuclearExplosion(button) {
   const buttonCenterX = buttonRect.left - containerRect.left + buttonRect.width / 2;
   const buttonCenterY = buttonRect.top - containerRect.top + buttonRect.height / 2;
   
+// Play explosion sound
+  plahvatus.play();
+
   // Add shake effect to body
   document.body.classList.add('exploding');
   setTimeout(() => {
