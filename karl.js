@@ -1,8 +1,8 @@
 const plahvatus = new Audio('plahvatus.mp3');
-plahvatus.preload = 'auto'; // Preload the audio file
-plahvatus.load(); // Force loading to start immediately
+plahvatus.preload = 'auto'; // Eellaadi helifail
+plahvatus.load(); // Sunni laadimist kohe alustama
 
-
+/* Nupu klõpsamise efekt, autor Karl Elmar Vikat */
 document.getElementById("startButton").addEventListener("click", (e) => {
   createNuclearExplosion(e.target);
   setTimeout(() => {
@@ -10,28 +10,28 @@ document.getElementById("startButton").addEventListener("click", (e) => {
   }, 200);
 });
 
-/* Nuclear explosion effect, author Cursor Composer 1*/
+/* Tuumapommi plahvatusefekt, autor Cursor Composer 1*/
 function createNuclearExplosion(button) {
-  // Get button's parent container (.intro)
+  // Hangi nupu ülemine konteiner (.intro)
   const container = button.closest('.intro');
   if (!container) return;
   
-  // Get button position relative to container
+  // Hangi nupu asukoht konteineri suhtes
   const buttonRect = button.getBoundingClientRect();
   const containerRect = container.getBoundingClientRect();
   const buttonCenterX = buttonRect.left - containerRect.left + buttonRect.width / 2;
   const buttonCenterY = buttonRect.top - containerRect.top + buttonRect.height / 2;
   
-// Play explosion sound
+// Mängi plahvatuse heli
   plahvatus.play();
 
-  // Add shake effect to body
+  // Lisa raputamise efekt
   document.body.classList.add('exploding');
   setTimeout(() => {
     document.body.classList.remove('exploding');
   }, 500);
   
-  // Create flash overlay - covers entire screen, centered on button
+  // Loo välgatus - katab kogu ekraani, tsentreeritud nupule
   const flash = document.createElement('div');
   flash.className = 'explosion-flash';
   const buttonScreenX = buttonRect.left + buttonRect.width / 2;
@@ -43,7 +43,7 @@ function createNuclearExplosion(button) {
   document.body.appendChild(flash);
   setTimeout(() => flash.remove(), 600);
   
-  // Create explosion core - relative to container
+  // Loo plahvatuse tuum
   const core = document.createElement('div');
   core.className = 'explosion-core';
   core.style.left = `${buttonCenterX}px`;
@@ -51,7 +51,7 @@ function createNuclearExplosion(button) {
   container.appendChild(core);
   setTimeout(() => core.remove(), 1000);
   
-  // Create shockwave - relative to container
+  // Loo lööklaine 
   const shockwave = document.createElement('div');
   shockwave.className = 'explosion-shockwave';
   shockwave.style.left = `${buttonCenterX}px`;
@@ -59,7 +59,7 @@ function createNuclearExplosion(button) {
   container.appendChild(shockwave);
   setTimeout(() => shockwave.remove(), 1200);
   
-  // Create particles - nuclear colors, relative to container
+  // Plahvatuse osakeste loomine
   const particleCount = 60;
   const colors = ['#ffffff', '#ffd700', '#ff6600', '#ff3300', '#cc0000', '#ffaa00', '#ffff00'];
   
@@ -67,7 +67,7 @@ function createNuclearExplosion(button) {
     const particle = document.createElement('div');
     particle.className = 'explosion-particle';
     
-    // Random angle and distance - some fast, some slow
+    // Juhuslik nurk ja kaugus plahvatuse osakestele, mõned kiired, mõned aeglased
     const angle = Math.random() * Math.PI * 2;
     const speed = Math.random() > 0.5 ? 'fast' : 'slow';
     const distance = speed === 'fast' 
@@ -84,7 +84,7 @@ function createNuclearExplosion(button) {
     particle.style.top = `${buttonCenterY}px`;
     particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
     
-    // Varying sizes - some big chunks, some small sparks
+    // Erinevad suurused plahvatuse tükkidele,mõned suured tükid, mõned väikesed sädemed
     const size = speed === 'fast' 
       ? 4 + Math.random() * 8 
       : 8 + Math.random() * 15;
@@ -93,7 +93,7 @@ function createNuclearExplosion(button) {
     
     container.appendChild(particle);
     
-    // Remove particle after animation
+    // Eemalda osakesed pärast animatsiooni
     setTimeout(() => {
       if (particle.parentNode) {
         particle.remove();
