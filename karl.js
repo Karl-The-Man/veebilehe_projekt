@@ -2,7 +2,7 @@ const plahvatus = new Audio('plahvatus.mp3');
 plahvatus.preload = 'auto'; // Eellaadi helifail
 plahvatus.load(); // Sunni laadimist kohe alustama
 
-/* Nupu klõpsamise efekt, autor Karl Elmar Vikat */
+/* Nupu klõpsamise efekt (autor Karl Elmar Vikat) */
 document.getElementById("startButton").addEventListener("click", (e) => {
   createNuclearExplosion(e.target);
   setTimeout(() => {
@@ -10,7 +10,7 @@ document.getElementById("startButton").addEventListener("click", (e) => {
   }, 200);
 });
 
-/* Tuumapommi plahvatusefekt, autor Cursor Composer 1*/
+/* Tuumapommi plahvatusefekt (autor Cursor Composer 1)*/
 function createNuclearExplosion(button) {
   // Hangi nupu ülemine konteiner (.intro)
   const container = button.closest('.intro');
@@ -106,3 +106,36 @@ function openRecipe(page) {
   window.location.href = page;
 }
 
+/* Salajane fakti nupp (autor Karl Elmar Vikat) */
+const faktid = [
+  "Kas teadsid, et kui pasta oleks religioon, oleks parmesan selle püha vesi?",
+  "Šokolaad ei küsi kunagi, kuidas su päev läks, ta lihtsalt parandab selle.",
+  "Kokad ütlevad, et “maitsesta maitse järgi”, tõlge: pane soola, kuni su süda rahul on.",
+  "Makaronid on lihtsalt pastad, kes ei viitsinud moodsat nime võtta.",
+  "Kui sul on külm, söö pastat. Kui sul on kurb, söö pastat. Kui kõik on hästi, söö ikkagi pastat.",
+  "Iga pitsa on ümmargune tõestus, et elu võib tõesti imeline olla.",
+  "Juust on ametlik põhjus, miks taimetoitlased öösel mõtlevad: “Äkki homme alustan uuesti…”",
+  "Kokad ei tee vigu – nad leiutavad “uut retsepti”.",
+  "Jäätis on sotsiaalselt aktsepteeritud viis süüa külmutatud suhkrut ega tunda end süüdi.",
+  "Kõige ohtlikum köögiriist on näljas inimene – ta sööb su snäkid ära enne, kui toit valmis saab."
+];
+
+const factButton = document.getElementById("factButton");
+const factDisplay = document.getElementById("factDisplay");
+
+factButton.addEventListener("click", () => {
+  // Vali juhuslik fakt massiivist - Math.random() annab 0-1 vahelise arvu, korrutame faktide arvuga ja ümardame alla
+  const juhuslikFakt = faktid[Math.floor(Math.random() * faktid.length)];
+  // Aseta valitud fakt ekraanile näitamiseks
+  factDisplay.textContent = juhuslikFakt;
+  // Tee fakt nähtavaks (alguses on see peidetud)
+  factDisplay.style.display = "block";
+  
+  // Keri leht alla, et fakt oleks nähtav
+  factDisplay.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  
+  // Peida fakt mõne sekundi pärast
+  setTimeout(() => {
+    factDisplay.style.display = "none";
+  }, 7000);
+});

@@ -280,3 +280,40 @@ footer {
   padding: 1rem 0;
   font-size: 0.9rem;
 }
+
+#factButton {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  background-color: var(--peach);
+  color: var(--indigo);
+  border: 2px solid var(--red);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#factButton:hover {
+  background-color: var(--red);
+  color: white;
+  transform: scale(1.05);
+}
+
+#factDisplay {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  font-style: italic;
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
