@@ -2,7 +2,7 @@
     align-items: center;
     background-color: #08415C;
     padding: 8px;
-    color: #EEE5E9;
+    color: white;
 }
 
 body {
@@ -20,8 +20,14 @@ body {
     color: #F1BF98;
 }
 
+.lisa {
+    border-top-style: solid;
+    border-color: #CC2936;
+}
+
 .lühitutvustus{
     text-align: center;
+    padding: 1%;
 }
 
 .kastid {
@@ -61,6 +67,19 @@ body {
     display: block;
 }
 
+.nupp{
+    background-color: #EEE5E9 ;
+    border-radius: 10px;
+    padding: 2px;
+    border-color: #EEE5E9;
+    font-family: 'Comic Sans MS';
+    font: bold;
+}
+
+.NUPP{
+    text-align: center;
+}
+
 .jalga {
     min-height: 50px;
     background-color: #6B818C;
@@ -68,8 +87,4 @@ body {
     text-align: center;
     padding: 1rem 0;
     font-size: 0.9rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }
