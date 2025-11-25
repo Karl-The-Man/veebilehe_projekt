@@ -1,6 +1,6 @@
 const nupp = document.getElementById("nupp");
 nupp.addEventListener("click", teisenda);
-const kotkas = new Audio('kotkas.mp3');
+const kotkas = new Audio('helid/kotkas.mp3');
 
 let x = 0
 

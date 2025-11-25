@@ -1,4 +1,4 @@
-const plahvatus = new Audio('plahvatus.mp3');
+const plahvatus = new Audio('helid/plahvatus.mp3');
 plahvatus.preload = 'auto'; // Eellaadi helifail
 plahvatus.load(); // Sunni laadimist kohe alustama
 
