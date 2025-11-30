@@ -1,10 +1,13 @@
+//nupp
 const nupp = document.getElementById("nupp");
 nupp.addEventListener("click", teisenda);
+// kotka helifial
 const kotkas = new Audio('helid/kotkas.mp3');
-
+//muutuja mille väärtust iga nupuvajutusega muutb ning vastavalt väärtusele kuvatakse teksti
 let x = 0
-
+//skript
 function teisenda() {
+    //esimene nupuvajutus muudab usa ühikuteks ning mängitakse helifail
     if (x == 0) {
     document.getElementById('makaronid_ühik').innerHTML = "0.55 lbs of pasta";
     document.getElementById("koor_ühik").innerHTML = "0.105 gallons of heavy cream";
@@ -13,15 +16,18 @@ function teisenda() {
     kotkas.play();
     x = 1;
     }
+    // teise vajutusega kuvatakse humoorikas tekst 
     else if (x == 1) {
         document.getElementById('js_sisend').innerHTML = "VABADUSE EEST POLE PÄÄSU";
         x = 2;
 
     }
-    
+    //kolmanda vajutusega veel humoorikat teksti
     else if (x == 2) {
         document.getElementById('js_sisend').innerHTML = "Okei, kui sa just peale käid";
         x = 3
+    
+    //neljanda vajutusega on jälle näha algne jutt
     }
 
     else if (x == 3) {
