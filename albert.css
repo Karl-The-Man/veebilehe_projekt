@@ -5,15 +5,21 @@ body{
     font-family: "Comic Sans", "Comic Sans MS" ;
 }
 
-
-
-
 .Pealkiri{
     color: white;
 }
 
 .Pealkiri1{
     color: #F1BF98;
+}
+
+.eluloo_p{
+    text-align: center
+}
+
+.jutt{
+    text-align: center;
+    text-align: justify;
 }
 
 .sektsioon{
@@ -25,8 +31,6 @@ body{
     background-color: #08415C;
     padding: 2%;
     text-align: center;
-    
-    
 }
 
 .sissejuhatus{
@@ -45,7 +49,6 @@ body{
     border-color: #CC2936;
     border-radius: 10px 10px 10px 10px;
     align-items: stretch;
-    
 }
 
 .tekst{
@@ -65,7 +68,6 @@ body{
 
 .koostisosad{
     flex: 40%;
-    
     order: -2;
 }
 
@@ -85,6 +87,7 @@ body{
     padding: 10px;
     color: white;
     text-align: center;
+    font-size: small;
 }
 
 .nupp{
@@ -94,6 +97,13 @@ body{
     border-color: #EEE5E9;
     font-family: 'Comic Sans MS';
     font: bold;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; 
+}
+
+.nupp:hover{
+    transform: scale(1.1);
 }
 
 .NUPP{
