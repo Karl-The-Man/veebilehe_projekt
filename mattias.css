@@ -1,6 +1,7 @@
 /* Mattias-specific styles */
 .appi {
-    align-items: center;
+    text-align: center;
+    background-color: #08415C;
     padding: 8px;
 }
 
