@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="et">
 <head class="pea">
+<!--JS import-->
 <script src="albert.js" defer></script>
+<!--HTML import-->
 <link rel="stylesheet" href="albert.css">
 <title>Minu retsept</title>
 </head>
 <body>
 <div class="header">
     <header >
+        <!--Päis-->
         <h1 class="Pealkiri">
             Kreemine pasta sinihallitusjuustu kastmes
         </h1>
@@ -18,18 +21,22 @@
     </h4>
     </div>
 </div>
-
+<!--Tsitaat-->
 <div class="sissejuhatus">
     <p>
-        "Üks parimaid asju mida olen söönud" - Gordon Ramsey
+        "Üks parimaid asju mida olen söönud" - Gordon Ramsay
+
     </p>
 </div>
+
 <div class="Container">
     <div class="koostisosad">
+        <!--Teisiendus nupp-->
         <div class="NUPP">
             <button class="nupp" id="nupp">Vabaduse ühikud</button>
         </div>
-        <p> <input type="checkbox" name="makaronid" id="makaronid"> 
+        <!--Koostisosad koos checkboxidega-->
+         <input type="checkbox" name="makaronid" id="makaronid"> 
             <label for="makaronid" id="makaronid_ühik">Lemmik maitsega makaroni kuju ~250g </label>
             <br>
             <br>
@@ -44,8 +51,7 @@
             <input type="checkbox" name="mandlilaastud" id="mandlilaastud">
             <label for="mandlilaastud" id="mandlid_ühik">Mandlilaastud</label>
             <br>
-            <p id="js_sisend"></p>
-         </p>
+            <p id="js_sisend"></p> 
 
     </div>
     <div class="Pilt">
@@ -53,24 +59,22 @@
         <img class="pasta" src="pildid/pasta.png" alt="yummers" style="width: 300px;">
     </div>
     <div class="tekst">
-        <p>
-            Õpetan teile, kuidas ühte lihtsat, kiiret ja maitsvat retsepti valmistada. <br>
-                <br>
-                 1. Keeda valmis makaronid vastavalt pakendil olevatele juhistele, kurna, ning jäta oma aega ootama. <br>
-                 <br>
-                 2. Rösti pannil mandlilaastud kuni need on kuldpruunid ning seejärel tõsta kõrvale. <br>
-                 <br>
-                 3. Keskmise kuumusega pannile lisa koor ning hakka juustu sisse tükeldama. Jälgi panni aegajalt segades kuni juust on sulanud ning lisa siis juurde pasta, sega hoolikalt ning kuumuta veel madalal kuumusel paar minutit.<br>
-                 <br>
-                 4. Tõsta pasta taldrikule ning kaunista mandlilaastudega.
-                 <br>
-                 <br> <p class="naudi">Naudi👍</p>
+        <!--Retsepti osa-->
         
-        </p>
+        <p>Õpetan teile, kuidas ühte lihtsat, kiiret ja maitsvat retsepti valmistada.</p> 
+            <br>
+                <p>1. Keeda valmis makaronid vastavalt pakendil olevatele juhistele, kurna, ning jäta oma aega ootama. </p>
+                <p>2. Rösti pannil mandlilaastud kuni need on kuldpruunid ning seejärel tõsta kõrvale. </p>
+                <p>3. Keskmise kuumusega pannile lisa koor ning hakka juustu sisse tükeldama. Jälgi panni aegajalt segades kuni juust on sulanud ning lisa siis juurde pasta, sega hoolikalt ning kuumuta veel madalal kuumusel paar minutit.</p>
+                <p>4. Tõsta pasta taldrikule ning kaunista mandlilaastudega.</p>
+                <p class="naudi">Naudi👍</p>
+        
     </div>
 </div>
-
+<!--jalus-->
 <footer class="jalus">
         
-    <small><p>2025 Pommi(poisid) | Õpiprojekt</p></small>
+    <p>2025 Pommi(poisid) | Õpiprojekt</p>
 </footer>
+
+</html>
