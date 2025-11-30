@@ -1,28 +1,12 @@
+/* Mattias-specific styles */
 .appi {
     align-items: center;
-    background-color: #08415C;
     padding: 8px;
-    color: white;
-}
-
-body {
-    margin: 0;
-    font-family: "Comic Sans MS";
-    background-color: #EEE5E9;
-    min-height: 100vh;
 }
 
 .alapeakiri {
     min-height: 50px;
-    border-top-style: solid;
-    border-color: #CC2936;
     text-align: center;
-    color: #F1BF98;
-}
-
-.lisa {
-    border-top-style: solid;
-    border-color: #CC2936;
 }
 
 .lühitutvustus{
@@ -30,18 +14,7 @@ body {
     padding: 1%;
 }
 
-.kastid {
-    display: flex;
-    background-color: white;
-    flex-direction: row;
-    margin: 5%;
-    border-left-style: solid;
-    border-width: 10px;
-    border-color: #CC2936;
-    border-radius: 10px 10px 10px 10px;
-    align-items: stretch;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
+/* Container specific to Mattias's page */
 
 .koostisosad {
     flex: 25%;
@@ -57,34 +30,7 @@ body {
     line-height: 18pt;
 }
 
-.pilt {
-    align-self: flex-end;
-    height: auto;
-}
-
-.pannkook {
-    border-radius: 0px 10px 10px 0;
-    display: block;
-}
-
-.nupp{
-    background-color: #EEE5E9 ;
-    border-radius: 10px;
-    padding: 2px;
-    border-color: #EEE5E9;
-    font-family: 'Comic Sans MS';
-    font: bold;
-}
-
-.NUPP{
-    text-align: center;
-}
-
+/* Mattias-specific layout styles */
 .jalga {
     min-height: 50px;
-    background-color: #6B818C;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 0.9rem;
 }

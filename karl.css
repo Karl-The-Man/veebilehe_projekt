@@ -1,23 +1,8 @@
-:root {
-  --indigo: #08415C;
-  --red: #CC2936;
-  --gray: #6B818C;
-  --peach: #F1BF98;
-  --blush: #EEE5E9;
-}
-
 body {
-  font-family: 'Comic Sans MS', sans-serif;
-  background-color: var(--blush);
-  color: var(--indigo);
-  margin: 0;
   text-align: center;
 }
 
-/* HEADER */
 header {
-  background-color: var(--indigo);
-  color: white;
   padding: 2rem 1rem;
 }
 
@@ -60,13 +45,10 @@ button {
   background-color: var(--red);
   color: white;
   font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: var(--indigo);
-  transform: scale(1.05);
 }
 
 /* Nuclear explosion effect */
@@ -273,13 +255,7 @@ body.exploding {
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
-/* FOOTER */
-footer {
-  background-color: var(--gray);
-  color: white;
-  padding: 1rem 0;
-  font-size: 0.9rem;
-}
+/* Footer specific to Karl's page */
 
 #factButton {
   margin-top: 1rem;

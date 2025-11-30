@@ -1,0 +1,109 @@
+/* Common CSS Variables */
+:root {
+  --indigo: #08415C;
+  --red: #CC2936;
+  --gray: #6B818C;
+  --peach: #F1BF98;
+  --blush: #EEE5E9;
+}
+
+/* Common Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS", "Comic Sans", sans-serif;
+  background-color: var(--blush);
+  color: var(--indigo);
+  min-height: 100vh;
+}
+
+/* Common Header Styles */
+header,
+.header,
+.appi {
+  background-color: var(--indigo);
+  color: white;
+  padding: 2%;
+  text-align: center;
+}
+
+/* Common Footer Styles */
+footer,
+.jalus,
+.jalga {
+  background-color: var(--gray);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+}
+
+/* Common Button Styles */
+button,
+.nupp {
+  background-color: var(--blush);
+  border-radius: 10px;
+  padding: 2px;
+  border-color: var(--blush);
+  font-family: 'Comic Sans MS';
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.nupp:hover {
+  transform: scale(1.05);
+}
+
+/* Common Border Styles */
+.sektsioon,
+.alapeakiri,
+.lisa {
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-color: var(--red);
+  margin: 0;
+  padding: 0;
+}
+
+/* Common Container Base Styles */
+.Container,
+.kastid {
+  display: flex;
+  background-color: white;
+  flex-direction: row;
+  margin: 5%;
+  border-left-style: solid;
+  border-width: 10px;
+  border-color: var(--red);
+  border-radius: 10px;
+  align-items: stretch;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Common Image Styles */
+.Pilt,
+.pilt {
+  align-self: flex-end;
+  height: auto;
+}
+
+.pasta,
+.pannkook {
+  border-radius: 0px 10px 10px 0;
+  display: block;
+}
+
+/* Common Text Alignment */
+.NUPP {
+  text-align: center;
+}
+
+/* Common Subtitle/Peach Color */
+.Pealkiri1,
+.alapeakiri,
+.subtitle {
+  color: var(--peach);
+}
+
