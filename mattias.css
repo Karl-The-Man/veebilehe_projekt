@@ -1,5 +1,5 @@
 .appi {
-    align-items: center;
+    text-align: center;
     background-color: #08415C;
     padding: 8px;
     color: white;
@@ -52,7 +52,6 @@ body {
     flex: 40%;
     border-left-style: solid;
     border-color: #CC2936;
-    border-width: auto;
     text-align: center;
     line-height: 18pt;
 }

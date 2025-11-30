@@ -1,11 +1,15 @@
-const nupp = document.getElementById("nupp");
-nupp.addEventListener("click", teisenda);
-const kotkas = new Audio('helid/kotkas.mp3');
+const nupp = document.getElementById("nupp"); /*Nupu saamine HTML-ist*/
+nupp.addEventListener("click", teisenda); /*Nuppu vajutades toimub teisenda funktsioon*/
+const kotkas = new Audio('helid/kotkas.mp3'); /*Heliobjekti loomine*/
 
+/*Esimese oleku loomine*/
 let x = 0
 
+/*Funktsioon, mida täidetakse iga nupuvajutuse korral vastavalt olekule*/
 function teisenda() {
-    if (x == 0) {
+    /*Algse oleku põhjal tehtavad toimingud*/
+    if (x == 0) { 
+        /*Retsepti nimekiri muutub ameerika standardite kohaseks*/
     document.getElementById('piim_tõlge').innerHTML = "0.26 gallons of milk";
     document.getElementById("munad_tõlge").innerHTML = "4 eggs";
     document.getElementById("suhkur_tõlge").innerHTML = "1 tsp. of sugar";
@@ -13,10 +17,14 @@ function teisenda() {
     document.getElementById("või_tõlge").innerHTML = "2 tbsp. of butter" ;
     document.getElementById("sool_tõlge").innerHTML = "pinch of salt" ;
 
+    /*eelnevalt loodud helifaili esitamine siinse sündmuse puhul*/
     kotkas.play();
+    /*Järgmise oleku valmis seadmine*/
     x = 1;
     }
+    /*Uuel nupuvajutusel uus olek, seega uued tegevused*/
     else if (x == 1) {
+        /*Lihtsa sõnumi esitamine, sarnane samm järgmises olekus*/
         document.getElementById('tühi_tõlge').innerHTML = "VABADUSE EEST POLE PÄÄSU";
         x = 2;
 
@@ -27,6 +35,7 @@ function teisenda() {
         x = 3
     }
 
+    /*Viimase olekuga määrab kõik tagasi samasuguseks, nagu alguses oli*/
     else if (x == 3) {
         document.getElementById('piim_tõlge').innerHTML = "Piim 1l";
         document.getElementById("munad_tõlge").innerHTML = "munad 4tk";
